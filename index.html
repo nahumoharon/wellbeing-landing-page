@@ -42,7 +42,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block h-8 w-8 -mt-1"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="M7 12a5 5 0 0 1 5-5"></path></svg>
                 Wellbeing AI
             </div>
-            <nav class="hidden md:flex items-center space-x-8">
+            <nav class="hidden md:flex items-center space-x-8" id="desktop-nav">
                 <a href="#features" class="text-slate-600 hover:text-indigo-600 transition-colors">Features</a>
                 <a href="#employee-experience" class="text-slate-600 hover:text-indigo-600 transition-colors">The Experience</a>
                 <a href="#how-it-works" class="text-slate-600 hover:text-indigo-600 transition-colors">How It Works</a>
@@ -127,17 +127,22 @@
             </div>
         </section>
 
-        <!-- Features Section -->
+        <!-- Features Section (Collapsed for brevity) -->
         <section id="features" class="py-20 bg-white">
              <!-- ... content remains the same ... -->
         </section>
         
-        <!-- Employee Experience Mockup Section -->
+        <!-- Employee Experience Mockup Section (Collapsed for brevity) -->
         <section id="employee-experience" class="py-20 bg-slate-50">
              <!-- ... content remains the same ... -->
         </section>
         
-        <!-- Security Section -->
+        <!-- How it Works Section (Collapsed for brevity) -->
+        <section id="how-it-works" class="py-20">
+             <!-- ... content remains the same ... -->
+        </section>
+
+        <!-- Security Section (Collapsed for brevity) -->
         <section id="security" class="py-20 bg-white">
              <!-- ... content remains the same ... -->
         </section>
@@ -168,7 +173,10 @@
             </button>
             <h3 class="text-2xl font-bold text-slate-800 mb-2">Request a Demo</h3>
             <p class="text-slate-500 mb-6">Just a couple of details to help us prepare for our chat.</p>
-            <!-- UPDATED FORM ACTION -->
+            <!-- 
+                IMPORTANT: Replace the action URL below with your unique URL from Formspree.io 
+                This will save the form data and send it to your email.
+            -->
             <form action="https://formspree.io/f/mkgveprz" method="POST">
                 <div class="mb-4">
                     <label for="employees" class="block text-sm font-medium text-slate-700 mb-1">Number of Employees</label>
@@ -183,8 +191,6 @@
                      <label for="industry" class="block text-sm font-medium text-slate-700 mb-1">Primary Industry</label>
                     <input type="text" id="industry" name="Industry" placeholder="e.g., Technology, Healthcare, Finance" class="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
                 </div>
-                 <!-- Added a hidden field for the email address -->
-                <input type="hidden" name="_to" value="wellbeingaiplatform@gmail.com">
                 <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-all shadow-md">Send Request</button>
             </form>
         </div>
@@ -199,6 +205,19 @@
             mobileMenu.classList.toggle('hidden');
         });
 
+        // --- NEW: Robust Smooth Scrolling for Nav Links ---
+        document.querySelectorAll('header a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                if (mobileMenu.classList.contains('hidden') === false) {
+                    mobileMenu.classList.add('hidden');
+                }
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
         // Fade-in animations on scroll
         const sections = document.querySelectorAll('.fade-in-section');
         const observer = new IntersectionObserver((entries) => {
@@ -208,10 +227,7 @@
                 }
             });
         }, { threshold: 0.1 });
-
-        sections.forEach(section => {
-            observer.observe(section);
-        });
+        sections.forEach(section => observer.observe(section));
 
         // Modal Logic
         const openModalButtons = document.querySelectorAll('.open-demo-modal');
@@ -219,7 +235,8 @@
         const modal = document.getElementById('demo-modal');
 
         openModalButtons.forEach(button => {
-            button.addEventListener('click', () => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault(); // Prevent default button behavior
                 modal.classList.remove('hidden');
             });
         });
@@ -234,8 +251,8 @@
                 closeModal();
             }
         });
-
     </script>
 </body>
 </html>
+
 
