@@ -28,9 +28,6 @@
         .brand-text {
             color: #5a67d8; /* indigo-600 */
         }
-        .modal {
-            transition: opacity 0.25s ease;
-        }
     </style>
 </head>
 <body class="text-slate-800">
@@ -47,7 +44,7 @@
                 <a href="#employee-experience" class="text-slate-600 hover:text-indigo-600 transition-colors">The Experience</a>
                 <a href="#how-it-works" class="text-slate-600 hover:text-indigo-600 transition-colors">How It Works</a>
                 <a href="#security" class="text-slate-600 hover:text-indigo-600 transition-colors">Security</a>
-                <button data-modal-target="demo-modal" class="open-demo-modal bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700 transition-all shadow-md">Request a Demo</button>
+                <a href="mailto:wellbeingaiplatform@gmail.com?subject=Demo%20Request%20for%20Wellbeing%20AI%20Platform&body=Please%20provide%20the%20following%20details%3A%0D%0A%0D%0ANumber%20of%20Employees%3A%20%0D%0A%0D%0APrimary%20Industry%3A%20" class="bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700 transition-all shadow-md">Request a Demo</a>
             </nav>
             <button class="md:hidden text-slate-800" id="mobile-menu-button">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -61,7 +58,7 @@
             <a href="#employee-experience" class="block py-2 text-slate-600 hover:text-indigo-600">The Experience</a>
             <a href="#how-it-works" class="block py-2 text-slate-600 hover:text-indigo-600">How It Works</a>
             <a href="#security" class="block py-2 text-slate-600 hover:text-indigo-600">Security</a>
-            <button data-modal-target="demo-modal" class="open-demo-modal block w-full mt-2 bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700 text-center">Request a Demo</button>
+            <a href="mailto:wellbeingaiplatform@gmail.com?subject=Demo%20Request%20for%20Wellbeing%20AI%20Platform&body=Please%20provide%20the%20following%20details%3A%0D%0A%0D%0ANumber%20of%20Employees%3A%20%0D%0A%0D%0APrimary%20Industry%3A%20" class="block mt-2 bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700 text-center">Request a Demo</a>
         </div>
     </header>
 
@@ -76,7 +73,7 @@
                 <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-8 fade-in-section" style="transition-delay: 150ms;">
                     Our AI-driven, privacy-first platform moves beyond simple surveys. We provide personalized, seamless support to your employees while delivering anonymous, strategic insights to you.
                 </p>
-                <button data-modal-target="demo-modal" class="open-demo-modal bg-indigo-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-indigo-700 transition-all shadow-xl inline-block fade-in-section" style="transition-delay: 300ms;">Request a Free Demo</button>
+                <a href="mailto:wellbeingaiplatform@gmail.com?subject=Demo%20Request%20for%20Wellbeing%20AI%20Platform&body=Please%20provide%20the%20following%20details%3A%0D%0A%0D%0ANumber%20of%20Employees%3A%20%0D%0A%0D%0APrimary%20Industry%3A%20" class="bg-indigo-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-indigo-700 transition-all shadow-xl inline-block fade-in-section" style="transition-delay: 300ms;">Request a Free Demo</a>
                 
                 <!-- Hero Dashboard Mockup -->
                 <div class="mt-16 bg-white rounded-2xl shadow-2xl p-4 md:p-6 border border-slate-200 max-w-4xl mx-auto fade-in-section" style="transition-delay: 450ms;">
@@ -127,24 +124,142 @@
             </div>
         </section>
 
-        <!-- Features Section (Collapsed for brevity) -->
+        <!-- Features Section -->
         <section id="features" class="py-20 bg-white">
-             <!-- ... content remains the same ... -->
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-3">A Smarter Approach to Wellness</h2>
+                    <p class="text-slate-600 max-w-2xl mx-auto">Go beyond guesswork. Our platform is built to deliver real results for your team and your business.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Feature Cards... -->
+                     <div class="p-8 rounded-2xl shadow-lg bg-slate-50 fade-in-section">
+                         <div class="p-3 bg-indigo-100 rounded-full inline-block mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 brand-text"><path d="M12 8V4H8"></path><path d="M20 12v4h-4"></path><path d="M4 16.5A2.5 2.5 0 0 1 6.5 14H8"></path><path d="M16 4.5A2.5 2.5 0 0 1 18.5 7H20"></path><path d="M7.5 20a2.5 2.5 0 0 1-2.5-2.5V16"></path><path d="M14 16.5a2.5 2.5 0 0 1 2.5 2.5V20"></path></svg></div>
+                        <h3 class="text-xl font-bold mb-2">AI-Powered Insights</h3>
+                        <p class="text-slate-600">Our models analyze anonymized survey data to identify root causes of stress and burnout, turning employee feedback into actionable, strategic insights for leadership.</p>
+                    </div>
+                    <div class="p-8 rounded-2xl shadow-lg bg-slate-50 fade-in-section">
+                        <div class="p-3 bg-indigo-100 rounded-full inline-block mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 brand-text"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>
+                        <h3 class="text-xl font-bold mb-2">Privacy-First by Design</h3>
+                        <p class="text-slate-600">Trust is everything. We use end-to-end encryption, SSO, and strict k-anonymity rules. Individual data is never shared. Ever.</p>
+                    </div>
+                    <div class="p-8 rounded-2xl shadow-lg bg-slate-50 fade-in-section">
+                         <div class="p-3 bg-indigo-100 rounded-full inline-block mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 brand-text"><path d="M12 2a10 10 0 1 0 10 10H12V2z"></path><path d="m22 12-4-4"></path></svg></div>
+                        <h3 class="text-xl font-bold mb-2">Personalized Recommendations</h3>
+                        <p class="text-slate-600">The mobile companion app delivers personalized articles, resources, and activity suggestions, helping each employee with their specific well-being goals.</p>
+                    </div>
+                     <div class="p-8 rounded-2xl shadow-lg bg-slate-50 fade-in-section">
+                         <div class="p-3 bg-indigo-100 rounded-full inline-block mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 brand-text"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></div>
+                        <h3 class="text-xl font-bold mb-2">Seamless Integration</h3>
+                        <p class="text-slate-600">Our lightweight PC agent and mobile app understand work rhythms. Suggestions are only made at non-disruptive moments, respecting focus and flow.</p>
+                    </div>
+                     <div class="p-8 rounded-2xl shadow-lg bg-slate-50 fade-in-section">
+                         <div class="p-3 bg-indigo-100 rounded-full inline-block mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 brand-text"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg></div>
+                        <h3 class="text-xl font-bold mb-2">Fosters Social Connection</h3>
+                        <p class="text-slate-600">Our AI identifies shared interests and facilitates the creation of employee-led groups for activities like yoga or running, building community and reducing isolation.</p>
+                    </div>
+                     <div class="p-8 rounded-2xl shadow-lg bg-slate-50 fade-in-section">
+                        <div class="p-3 bg-indigo-100 rounded-full inline-block mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 brand-text"><path d="M2.5 2v6h6M21.5 22v-6h-6"/><path d="M22 11.5A10 10 0 0 0 3.2 7.2M2 12.5a10 10 0 0 0 18.8 4.2"/></svg></div>
+                        <h3 class="text-xl font-bold mb-2">Measure Real Impact</h3>
+                        <p class="text-slate-600">The employer dashboard provides clear "Before and After" analytics, allowing you to measure the ROI of your wellness programs and make data-driven decisions.</p>
+                    </div>
+                </div>
+            </div>
         </section>
         
-        <!-- Employee Experience Mockup Section (Collapsed for brevity) -->
+        <!-- Employee Experience Mockup Section -->
         <section id="employee-experience" class="py-20 bg-slate-50">
-             <!-- ... content remains the same ... -->
+             <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-3">A Seamless Experience for Your Team</h2>
+                    <p class="text-slate-600 max-w-2xl mx-auto">Our companion app provides intelligent, non-disruptive suggestions that help employees build healthier habits during their workday.</p>
+                </div>
+                
+                <!-- Mobile App Mockup -->
+                <div class="max-w-sm mx-auto bg-slate-800 rounded-[2.5rem] border-[14px] border-slate-800 shadow-2xl fade-in-section">
+                    <div class="w-full h-[30px] bg-slate-800 rounded-t-xl flex justify-center items-center">
+                        <div class="w-16 h-2 bg-slate-600 rounded-full"></div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-indigo-500"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="M7 12a5 5 0 0 1 5-5"></path></svg>
+                                <h4 class="text-xl font-bold text-slate-800 ml-3">AI Wellness Nudge</h4>
+                            </div>
+                            
+                            <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
+                                <p class="text-slate-600 text-base">"Our AI has noticed you've been sitting for over 2 hours and your concentration is slightly reduced."</p>
+                                <p class="text-slate-800 font-semibold mt-4">"If you do the following exercises, you'll feel much better and your brain will receive more oxygen."</p>
+                            </div>
+                            
+                            <div class="mt-6">
+                                <h5 class="font-bold text-slate-700 mb-3">Recommended Stretch:</h5>
+                                <div class="flex items-center p-4 bg-white rounded-lg border border-slate-200">
+                                    <img src="https://placehold.co/60x60/e0e7ff/5a67d8?text=Stretch" alt="Stretching exercise icon" class="rounded-lg"/>
+                                    <div class="ml-4">
+                                        <h6 class="font-semibold">Neck & Shoulder Roll</h6>
+                                        <p class="text-sm text-slate-500">Duration: 2 Minutes</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="w-full bg-indigo-600 text-white py-3 rounded-lg mt-6 font-semibold hover:bg-indigo-700 transition-all shadow-md">Start 2-Min Exercise</button>
+                            <button class="w-full text-slate-500 py-2 rounded-lg mt-2 text-sm font-medium hover:bg-slate-100 transition-all">Dismiss for now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         
-        <!-- How it Works Section (Collapsed for brevity) -->
-        <section id="how-it-works" class="py-20">
-             <!-- ... content remains the same ... -->
+        <!-- How it Works Section -->
+        <section id="how-it-works" class="py-20 bg-white">
+             <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-3">Simple for Employees. Powerful for You.</h2>
+                    <p class="text-slate-600 max-w-2xl mx-auto">Our three-step process is designed for high engagement and maximum insight.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <!-- Step 1 -->
+                    <div class="fade-in-section">
+                        <div class="mx-auto bg-indigo-100 text-indigo-600 rounded-full h-24 w-24 flex items-center justify-center text-4xl font-bold">1</div>
+                        <h3 class="text-xl font-bold mt-6 mb-2">Confidential Survey</h3>
+                        <p class="text-slate-600 px-4">Employees take a simple, confidential survey on mobile or desktop to establish a private wellness baseline. Anonymity is guaranteed from the start.</p>
+                    </div>
+                     <!-- Step 2 -->
+                    <div class="fade-in-section" style="transition-delay: 150ms;">
+                        <div class="mx-auto bg-indigo-100 text-indigo-600 rounded-full h-24 w-24 flex items-center justify-center text-4xl font-bold">2</div>
+                        <h3 class="text-xl font-bold mt-6 mb-2">Seamless, Smart Support</h3>
+                        <p class="text-slate-600 px-4">Our AI provides personalized resources and non-disruptive nudges based on the user's goals and real-time work context, respecting their focus and flow.</p>
+                    </div>
+                     <!-- Step 3 -->
+                    <div class="fade-in-section" style="transition-delay: 300ms;">
+                        <div class="mx-auto bg-indigo-100 text-indigo-600 rounded-full h-24 w-24 flex items-center justify-center text-4xl font-bold">3</div>
+                        <h3 class="text-xl font-bold mt-6 mb-2">Anonymous Strategic Insights</h3>
+                        <p class="text-slate-600 px-4">Leadership gets a high-level dashboard showing "Before and After" trends. The system highlights key issues and measures the impact of initiatives without ever revealing individual data.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- Security Section (Collapsed for brevity) -->
-        <section id="security" class="py-20 bg-white">
-             <!-- ... content remains the same ... -->
+        <!-- Security Section -->
+        <section id="security" class="py-20 bg-slate-50">
+             <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 fade-in-section">
+                    <span class="text-indigo-600 font-semibold">Security First</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Your Trust is Our Foundation</h2>
+                    <p class="text-slate-600 mb-6">We understand that employee wellness data is incredibly sensitive. Our platform was architected from the ground up with privacy and security as its core features. We make it technically impossible to compromise employee confidentiality.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start"><span class="text-green-500 mr-3 mt-1">✔</span><span>**Single Sign-On (SSO):** Integrates with your existing corporate login. No new passwords to manage or lose.</span></li>
+                        <li class="flex items-start"><span class="text-green-500 mr-3 mt-1">✔</span><span>**End-to-End Encryption:** All data is encrypted in transit and at rest using industry-best standards.</span></li>
+                        <li class="flex items-start"><span class="text-green-500 mr-3 mt-1">✔</span><span>**Strict Anonymization:** Individual data is pseudonymized and is never visible to managers or HR. All reports are aggregated with a minimum group size to protect identities.</span></li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 fade-in-section">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-24 h-24 text-indigo-500 mx-auto"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 9.9-1"></path></svg>
+                        <p class="text-center mt-4 text-slate-700 font-semibold">GDPR and CCPA Compliant by Design</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- CTA Section -->
@@ -152,7 +267,7 @@
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to See the Future of Employee Wellness?</h2>
                 <p class="text-indigo-200 max-w-2xl mx-auto mb-8">Schedule a free, no-obligation demo to see how Wellbeing AI can provide the strategic insights you need to build a happier, healthier, and more productive workforce.</p>
-                <button data-modal-target="demo-modal" class="open-demo-modal bg-white text-indigo-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-slate-100 transition-all shadow-2xl inline-block">Request Your Free Demo</button>
+                <a href="mailto:wellbeingaiplatform@gmail.com?subject=Demo%20Request%20for%20Wellbeing%20AI%20Platform&body=Please%20provide%20the%20following%20details%3A%0D%0A%0D%0ANumber%20of%20Employees%3A%20%0D%0A%0D%0APrimary%20Industry%3A%20" class="bg-white text-indigo-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-slate-100 transition-all shadow-2xl inline-block">Request Your Free Demo</a>
             </div>
         </section>
     </main>
@@ -165,38 +280,6 @@
         </div>
     </footer>
 
-    <!-- Demo Request Modal -->
-    <div id="demo-modal" class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden z-50">
-        <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full relative">
-            <button class="close-modal absolute top-4 right-4 text-slate-400 hover:text-slate-600">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
-            </button>
-            <h3 class="text-2xl font-bold text-slate-800 mb-2">Request a Demo</h3>
-            <p class="text-slate-500 mb-6">Just a couple of details to help us prepare for our chat.</p>
-            <!-- 
-                IMPORTANT: Replace the action URL below with your unique URL from Formspree.io 
-                This will save the form data and send it to your email.
-            -->
-            <form action="https://formspree.io/f/mkgveprz" method="POST">
-                <div class="mb-4">
-                    <label for="employees" class="block text-sm font-medium text-slate-700 mb-1">Number of Employees</label>
-                    <select id="employees" name="Number of Employees" class="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
-                        <option>1-50</option>
-                        <option>51-200</option>
-                        <option>201-1000</option>
-                        <option>1000+</option>
-                    </select>
-                </div>
-                <div class="mb-6">
-                     <label for="industry" class="block text-sm font-medium text-slate-700 mb-1">Primary Industry</label>
-                    <input type="text" id="industry" name="Industry" placeholder="e.g., Technology, Healthcare, Finance" class="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
-                </div>
-                <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-all shadow-md">Send Request</button>
-            </form>
-        </div>
-    </div>
-
-
     <script>
         // Mobile Menu Toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -205,16 +288,28 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // --- NEW: Robust Smooth Scrolling for Nav Links ---
-        document.querySelectorAll('header a[href^="#"]').forEach(anchor => {
+        // --- FIXED: Robust Smooth Scrolling for Nav Links ---
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                if (mobileMenu.classList.contains('hidden') === false) {
-                    mobileMenu.classList.add('hidden');
+                const targetId = this.getAttribute('href');
+                // Check if it's a mailto link, if so, don't prevent default
+                if (targetId.startsWith('mailto:')) {
+                    window.location.href = targetId;
+                    return;
                 }
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+
+                const targetElement = document.querySelector(targetId);
+
+                if(targetElement) {
+                    // This handles the mobile menu closing on click
+                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
             });
         });
 
@@ -228,31 +323,7 @@
             });
         }, { threshold: 0.1 });
         sections.forEach(section => observer.observe(section));
-
-        // Modal Logic
-        const openModalButtons = document.querySelectorAll('.open-demo-modal');
-        const closeModalButtons = document.querySelectorAll('.close-modal');
-        const modal = document.getElementById('demo-modal');
-
-        openModalButtons.forEach(button => {
-            button.addEventListener('click', (e) => {
-                e.preventDefault(); // Prevent default button behavior
-                modal.classList.remove('hidden');
-            });
-        });
-
-        const closeModal = () => {
-            modal.classList.add('hidden');
-        };
-
-        closeModalButtons.forEach(button => button.addEventListener('click', closeModal));
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                closeModal();
-            }
-        });
     </script>
 </body>
 </html>
-
 
