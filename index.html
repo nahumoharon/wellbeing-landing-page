@@ -132,8 +132,7 @@
                     <p class="text-slate-600 max-w-2xl mx-auto">Go beyond guesswork. Our platform is built to deliver real results for your team and your business.</p>
                 </div>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Feature Cards... -->
-                     <div class="p-8 rounded-2xl shadow-lg bg-slate-50 fade-in-section">
+                    <div class="p-8 rounded-2xl shadow-lg bg-slate-50 fade-in-section">
                          <div class="p-3 bg-indigo-100 rounded-full inline-block mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 brand-text"><path d="M12 8V4H8"></path><path d="M20 12v4h-4"></path><path d="M4 16.5A2.5 2.5 0 0 1 6.5 14H8"></path><path d="M16 4.5A2.5 2.5 0 0 1 18.5 7H20"></path><path d="M7.5 20a2.5 2.5 0 0 1-2.5-2.5V16"></path><path d="M14 16.5a2.5 2.5 0 0 1 2.5 2.5V20"></path></svg></div>
                         <h3 class="text-xl font-bold mb-2">AI-Powered Insights</h3>
                         <p class="text-slate-600">Our models analyze anonymized survey data to identify root causes of stress and burnout, turning employee feedback into actionable, strategic insights for leadership.</p>
@@ -289,17 +288,18 @@
         });
 
         // --- FIXED: Robust Smooth Scrolling for Nav Links ---
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        document.querySelectorAll('a[href^="#"], a[href^="mailto:"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                // Check if it's a mailto link, if so, don't prevent default
-                if (targetId.startsWith('mailto:')) {
-                    window.location.href = targetId;
+                const href = this.getAttribute('href');
+
+                // If it's a mailto link, let the browser handle it.
+                if (href.startsWith('mailto:')) {
                     return;
                 }
 
-                const targetElement = document.querySelector(targetId);
+                // For internal links, handle smooth scrolling.
+                e.preventDefault();
+                const targetElement = document.querySelector(href);
 
                 if(targetElement) {
                     // This handles the mobile menu closing on click
