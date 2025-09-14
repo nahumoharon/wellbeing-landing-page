@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellbeing AI - The Future of Employee Wellness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+        }
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .brand-text {
+            color: #5a67d8; /* indigo-600 */
+        }
+        .modal {
+            transition: opacity 0.25s ease;
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold brand-text">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block h-8 w-8 -mt-1"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="M7 12a5 5 0 0 1 5-5"></path></svg>
+                Wellbeing AI
+            </div>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-slate-600 hover:text-indigo-600 transition-colors">Features</a>
+                <a href="#employee-experience" class="text-slate-600 hover:text-indigo-600 transition-colors">The Experience</a>
+                <a href="#how-it-works" class="text-slate-600 hover:text-indigo-600 transition-colors">How It Works</a>
+                <a href="#security" class="text-slate-600 hover:text-indigo-600 transition-colors">Security</a>
+                <button data-modal-target="demo-modal" class="open-demo-modal bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700 transition-all shadow-md">Request a Demo</button>
+            </nav>
+            <button class="md:hidden text-slate-800" id="mobile-menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+         <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#features" class="block py-2 text-slate-600 hover:text-indigo-600">Features</a>
+            <a href="#employee-experience" class="block py-2 text-slate-600 hover:text-indigo-600">The Experience</a>
+            <a href="#how-it-works" class="block py-2 text-slate-600 hover:text-indigo-600">How It Works</a>
+            <a href="#security" class="block py-2 text-slate-600 hover:text-indigo-600">Security</a>
+            <button data-modal-target="demo-modal" class="open-demo-modal block w-full mt-2 bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700 text-center">Request a Demo</button>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="py-20 md:py-32 relative overflow-hidden">
+            <div class="absolute inset-0 gradient-bg opacity-10"></div>
+            <div class="container mx-auto px-6 text-center z-10 relative">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight mb-4 fade-in-section">
+                    The Intelligent Way to Boost<br class="hidden md:block"/> Employee <span class="brand-text">Well-being</span>
+                </h1>
+                <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-8 fade-in-section" style="transition-delay: 150ms;">
+                    Our AI-driven, privacy-first platform moves beyond simple surveys. We provide personalized, seamless support to your employees while delivering anonymous, strategic insights to you.
+                </p>
+                <button data-modal-target="demo-modal" class="open-demo-modal bg-indigo-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-indigo-700 transition-all shadow-xl inline-block fade-in-section" style="transition-delay: 300ms;">Request a Free Demo</button>
+                
+                <!-- Hero Dashboard Mockup -->
+                <div class="mt-16 bg-white rounded-2xl shadow-2xl p-4 md:p-6 border border-slate-200 max-w-4xl mx-auto fade-in-section" style="transition-delay: 450ms;">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="font-bold text-slate-800 text-sm md:text-lg text-left">Company Wellness Trends: Before vs. After</h3>
+                        <div class="text-xs text-slate-400">Q3 2025 Report</div>
+                    </div>
+                    <!-- SVG Chart -->
+                    <svg width="100%" height="100%" viewBox="0 0 700 350" class="w-full h-64 md:h-80">
+                        <!-- Background and Gridlines -->
+                        <rect width="700" height="350" fill="#f8fafc" rx="8"></rect>
+                        <g class="grid-lines" stroke="#e2e8f0" stroke-width="1">
+                            <line x1="50" y1="50" x2="50" y2="300"></line>
+                            <line x1="50" y1="300" x2="650" y2="300"></line>
+                            <line x1="50" y1="225" x2="650" y2="225" stroke-dasharray="2,2"></line>
+                            <line x1="50" y1="150" x2="650" y2="150" stroke-dasharray="2,2"></line>
+                            <line x1="50" y1="75" x2="650" y2="75" stroke-dasharray="2,2"></line>
+                        </g>
+                        <!-- Y-Axis Labels -->
+                        <g class="labels y-axis" fill="#64748b" font-size="12">
+                            <text x="40" y="305" text-anchor="end">0%</text>
+                            <text x="40" y="230" text-anchor="end">25%</text>
+                            <text x="40" y="155" text-anchor="end">50%</text>
+                            <text x="40" y="80" text-anchor="end">75%</text>
+                            <text x="40" y="55" text-anchor="end">100%</text>
+                        </g>
+                        <!-- Bar Groups -->
+                        <g class="bars" text-anchor="middle" font-size="12" fill="#64748b">
+                            <!-- Engagement Group -->
+                            <rect x="100" y="120" width="30" height="180" fill="#cbd5e1" rx="4"></rect>
+                            <rect x="135" y="75" width="30" height="225" fill="#4ade80" rx="4"></rect>
+                            <text x="132.5" y="320">Engagement</text>
+                            <!-- Stress Level Group -->
+                            <rect x="250" y="60" width="30" height="240" fill="#cbd5e1" rx="4"></rect>
+                            <rect x="285" y="105" width="30" height="195" fill="#f87171" rx="4"></rect>
+                            <text x="282.5" y="320">Stress Level</text>
+                             <!-- Work-Life Balance Group -->
+                            <rect x="400" y="135" width="30" height="165" fill="#cbd5e1" rx="4"></rect>
+                            <rect x="435" y="90" width="30" height="210" fill="#4ade80" rx="4"></rect>
+                            <text x="432.5" y="320">Work-Life Balance</text>
+                            <!-- Sleep Quality Group -->
+                            <rect x="550" y="165" width="30" height="135" fill="#cbd5e1" rx="4"></rect>
+                            <rect x="585" y="120" width="30" height="180" fill="#4ade80" rx="4"></rect>
+                            <text x="582.5" y="320">Sleep Quality</text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20 bg-white">
+             <!-- ... content remains the same ... -->
+        </section>
+        
+        <!-- Employee Experience Mockup Section -->
+        <section id="employee-experience" class="py-20 bg-slate-50">
+             <!-- ... content remains the same ... -->
+        </section>
+        
+        <!-- Security Section -->
+        <section id="security" class="py-20 bg-white">
+             <!-- ... content remains the same ... -->
+        </section>
+
+        <!-- CTA Section -->
+        <section id="cta" class="py-20 gradient-bg">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to See the Future of Employee Wellness?</h2>
+                <p class="text-indigo-200 max-w-2xl mx-auto mb-8">Schedule a free, no-obligation demo to see how Wellbeing AI can provide the strategic insights you need to build a happier, healthier, and more productive workforce.</p>
+                <button data-modal-target="demo-modal" class="open-demo-modal bg-white text-indigo-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-slate-100 transition-all shadow-2xl inline-block">Request Your Free Demo</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Wellbeing AI Platform. All rights reserved.</p>
+            <p class="text-slate-400 mt-2">A new standard in corporate wellness.</p>
+        </div>
+    </footer>
+
+    <!-- Demo Request Modal -->
+    <div id="demo-modal" class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden z-50">
+        <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full relative">
+            <button class="close-modal absolute top-4 right-4 text-slate-400 hover:text-slate-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+            </button>
+            <h3 class="text-2xl font-bold text-slate-800 mb-2">Request a Demo</h3>
+            <p class="text-slate-500 mb-6">Just a couple of details to help us prepare for our chat.</p>
+            <!-- UPDATED FORM ACTION -->
+            <form action="https://formspree.io/f/mkgveprz" method="POST">
+                <div class="mb-4">
+                    <label for="employees" class="block text-sm font-medium text-slate-700 mb-1">Number of Employees</label>
+                    <select id="employees" name="Number of Employees" class="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                        <option>1-50</option>
+                        <option>51-200</option>
+                        <option>201-1000</option>
+                        <option>1000+</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                     <label for="industry" class="block text-sm font-medium text-slate-700 mb-1">Primary Industry</label>
+                    <input type="text" id="industry" name="Industry" placeholder="e.g., Technology, Healthcare, Finance" class="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+                 <!-- Added a hidden field for the email address -->
+                <input type="hidden" name="_to" value="wellbeingaiplatform@gmail.com">
+                <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-all shadow-md">Send Request</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Fade-in animations on scroll
+        const sections = document.querySelectorAll('.fade-in-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // Modal Logic
+        const openModalButtons = document.querySelectorAll('.open-demo-modal');
+        const closeModalButtons = document.querySelectorAll('.close-modal');
+        const modal = document.getElementById('demo-modal');
+
+        openModalButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                modal.classList.remove('hidden');
+            });
+        });
+
+        const closeModal = () => {
+            modal.classList.add('hidden');
+        };
+
+        closeModalButtons.forEach(button => button.addEventListener('click', closeModal));
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+    </script>
+</body>
+</html>
+
